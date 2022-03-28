@@ -124,6 +124,10 @@ f n = 0
 
 Donde ambas expresiones son equivalentes.
 
+#####Nota:
+
+En casos de pattern matching, se puede utilizar `_` (comodín) para indicar cualquier valor de parametros, mientras cumpla con la signatura de la función
+
 ----
 
 ## Tipos de datos
@@ -133,6 +137,17 @@ Donde ambas expresiones son equivalentes.
 `Float: {+, -, *, /}`
 
 `Bool: {&&, ||, not}`
+
+## Signatura de una función
+
+Para indicar los tipos de valores de los parámetros que toma y devuelve una función, se declara primero una función con su signatura
+
+```haskell
+funcion :: Int -> Float -> Bool
+funcion x y
+[...]
+```
+Declara una función que toma un Integer `x`, un Float `y` y devuelve un valor de tipo bool 
 
 ```haskell
 maximo :: Int -> Int -> Int
